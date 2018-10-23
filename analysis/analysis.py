@@ -1,7 +1,6 @@
 import numpy as np
 import h5py as h5py
 import os.path
-import readsnap
 from matplotlib import pyplot as plt
 import yt
 import os
@@ -9,8 +8,8 @@ import sys
 
 id = str(sys.argv[1])
 
-inDir      = '/home/dgole/research/gizmo/' + id + '/output/'
-outDirBase = '/home/dgole/research/gizmo/' + id + '_plots/'
+inDir      = '../../' + id + '/output/'
+outDirBase = '../../' + id + '_plots/'
 if not os.path.exists(outDirBase): os.makedirs(outDirBase)
 ptype = 0
 tsMin = 0
